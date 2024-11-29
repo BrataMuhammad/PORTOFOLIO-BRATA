@@ -13,7 +13,8 @@ module.exports = {
       },
 
       fontFamily:{
-        montserrat: ['Montserrat', 'sans-serif']
+        montserrat: ['Montserrat', 'sans-serif'],
+        pattaya: ['Pattaya', 'sans-serif'],
       }
     },
   },

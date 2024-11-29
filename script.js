@@ -49,9 +49,9 @@ darkToggle.addEventListener('click', () =>{
 
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     darkToggle.checked = true;
-  } else {
+    } else {
     darkToggle.checked = false;
-  }
+    }
 
   /* For Contact Email */
 
@@ -69,4 +69,29 @@ form.addEventListener('submit', function(event){
         }).finally(() => {
             form.reset();
         });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const videos = document.querySelectorAll('video');
+
+    const options = {
+      root: null, // viewport default
+      threshold: 0.5 // 50% dari video harus terlihat
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+        const video = entry.target;
+
+        if (entry.isIntersecting) {
+            video.play();
+        } else {
+            video.pause();
+        }
+        });
+    }, options);
+
+    videos.forEach(video => {
+        observer.observe(video);
+    });
 });

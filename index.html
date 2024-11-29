@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Portfolio | Arμ's</title>
     <link rel="icon" type="image/x-icon" href="img/Arμ's  Logo 0.png" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Pattaya&display=swap"
       rel="stylesheet"
     />
     <link
@@ -56,21 +56,21 @@
       class="absolute left-0 top-0 z-10 flex w-full items-center justify-between bg-transparent"
     >
       <div class="container mx-auto">
-        <div class="relative flex items-center justify-between">
-          <div class="flex items-center py-4 pl-4">
-            <a href="#home"
+        <div class="relative grid grid-cols-3 items-center justify-between ">
+          <div class="flex items-center py-4 pl-4 max-md:col-start-2 max-md:justify-center ">
+            <!-- <a href="#home"
               ><img
                 src="img/Arμ's  Logo 0.png"
                 alt="Arμ's"
                 class="h-auto w-14 pr-2 invert dark:invert-0"
-            /></a>
+            /></a> -->
             <a
               href="#home"
-              class="block text-2xl font-bold text-primary lg:text-xl xl:text-3xl"
-              >Brataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a
+              class="block text-3xl font-bold font-pattaya text-primary lg:text-xl xl:text-5xl tracking-wide"
+              >Brata</a
             >
           </div>
-          <div class="flex flex-wrap items-center px-5">
+          <div class="flex flex-wrap items-center px-5 lg:col-span-2 justify-center">
             <button
               id="hamburger"
               name="hamburger"
@@ -115,7 +115,7 @@
                   >
                 </li>
                 <li
-                  class="flex items-center px-4 pb-4 pt-2 font-bold capitalize lg:ml-4"
+                  class="flex items-center px-4 pb-4 pt-2 font-bold capitalize lg:ml-4 "
                 >
                   <span class="mr-2">light</span>
                   <input
@@ -144,7 +144,7 @@
     <!-- Home section -->
     <section
       id="home"
-      class="pt-20 dark:text-secondary sm:pt-40 md:pt-32 dark:md:text-tertiary"
+      class="pt-20 dark:text-secondary sm:pt-40 md:pt-14 dark:md:text-tertiary"
     >
       <div class="container max-w-full">
         <div class="flex flex-wrap md:justify-between md:text-lg">
@@ -156,31 +156,31 @@
               Name Is
             </h1>
             <h2 class="my-4 text-4xl font-extrabold text-primary lg:text-5xl">
-              Muhammad Iqbal Ramadhan
+              Brata Muhammad
             </h2>
             <h3 class="text md my-2 font-semibold">
-              <span class="text-teal-600">Fullstack Developer</span> |
-              <span class="text-indigo-600">React & Vue Developer</span>
+              <span class="text-teal-600">UI/UX Designer</span> |
+              <span class="text-indigo-600">Graphic Designer</span>
             </h3>
-            <p>Make your designs come true!</p>
+            <p>Make your imagination come true!</p>
             <button
               class="mt-6 rounded-full bg-primary px-6 py-2 text-white shadow-lg shadow-primary/50 hover:bg-indigo-600"
             >
-              <a href="mailto:miramadhan354@gmail.com" target="_blank"
+              <a href="mailto:bratsmuhammad001@gmail.com" target="_blank"
                 >Hire Me!</a
               >
             </button>
           </div>
           <div class="mx-auto w-full self-end sm:w-2/3 md:mr-10 md:w-[35%]">
             <div class="relative mt-4 w-full sm:right-0">
-              <div class="overflow-hidden rounded-b-[35%]">
+              <div class="overflow-hidden rounded-b-[40%] w-[80%] mx-auto">
                 <img
                   src="img/hero.png"
                   alt="Araya Musawwah"
-                  class="w-full bg-top"
+                  class="w-full bg-top object-cover"
                 />
               </div>
-              <svg
+              <!-- <svg
                 viewBox="0 0 200 200"
                 xmlns="http://www.w3.org/2000/svg"
                 class="absolute left-20 top-0 -z-10"
@@ -212,7 +212,7 @@
                   d="M48.3,-18.4C53.8,1.3,43.5,23.5,25.8,36.6C8,49.7,-17.1,53.9,-32.5,43.1C-47.9,32.2,-53.7,6.4,-46.7,-15.3C-39.7,-37.1,-19.8,-54.9,0.8,-55.2C21.4,-55.4,42.8,-38.1,48.3,-18.4Z"
                   transform="translate(15 90) scale(0.3)"
                 />
-              </svg>
+              </svg> -->
             </div>
           </div>
         </div>
@@ -220,40 +220,43 @@
     </section>
 
     <!-- About section -->
-    <section id="about" class="pb-30 mb-10 pt-20 md:pb-40 md:pt-32">
+    <section id="about" class="pb-30 mb-10 pt-0 md:pb-40">
       <div class="container mx-auto px-4 py-8">
         <div class="flex flex-wrap items-center justify-between">
+
           <div class="my-8 md:w-1/2 md:p-4">
-            <h2 class="mb-4 text-lg font-semibold text-primary lg:text-xl">
+            <h2 class="text-xl font-semibold text-primary lg:text-xl">
               About Me
             </h2>
             <h1 class="text-2xl font-bold capitalize lg:text-3xl">
               Let's Know About Myself
             </h1>
-            <p class="lg:text-lg">
-              I'm a Front-end Web Developer based in Indonesia. Now I'm an
-              active student in University of Pamulang
+            <p class="lg:text-lg pt-4">
+              I am Muhammad Brata Ilham Mariko, a Graphic Designer from Indonesia with freelance experience in working on various client-ordered design projects, from branding, social media, to promotional design.
+            </p>
+            <p class="lg:text-lg pt-4"> I have a strong foundation in the world of visual design and continue to develop my skills along with technological developments.
             </p>
           </div>
-          <div class="mb-4 px-2 md:mt-28 md:w-1/2 md:p-4">
+
+          <div class="mb-4 md:mt-28 md:w-1/2 md:p-4">
             <h2 class="text-xl font-semibold text-primary lg:text-2xl">
               Take me with you!
             </h2>
-            <h1 class="mb-3 font-semibold lg:text-xl">
+            <h1 class="mb-3 text-2xl font-semibold lg:text-xl">
               It's necessery to take me with you
             </h1>
             <p class="lg:text-lg">
-              You need me for your projects and designs come true
+              "You need me for your imagination and then it will come true" 
             </p>
             <!-- social media -->
             <div class="my-4 mt-6 flex items-center">
               <a
-                href="https://instagram.com/elite.iqbal"
+                href="https://instagram.com/brata.muhammad"
                 target="_blank"
                 class="media-icon"
               >
                 <svg
-                  class="fill-current"
+                  class="fill-black"
                   width="20"
                   role="img"
                   viewBox="0 0 24 24"
@@ -266,30 +269,31 @@
                 </svg>
               </a>
               <a
-                href="https://github.com/arayaMusawwah"
+                href="https://"
                 target="_blank"
                 class="media-icon"
               >
                 <svg
-                  class="fill-current"
-                  width="20"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>GitHub</title>
-                  <path
-                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  />
-                </svg>
+                class="fill-black"
+                width="20"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Facebook</title>
+                <path
+                  d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24H12.82v-9.294H9.692V11.01h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.917c-1.504 0-1.796.715-1.796 1.763v2.312h3.59l-.467 3.696h-3.123V24h6.116c.73 0 1.324-.593 1.324-1.326V1.326C24 .593 23.407 0 22.675 0z"
+                />
+              </svg>
+            
               </a>
               <a
-                href="mailto:miramadhan354@gmail.com"
+                href="mailto:bratsmuhammad001@gmail.com"
                 target="_blank"
                 class="media-icon"
               >
                 <svg
-                  class="fill-current"
+                  class="fill-black"
                   width="20"
                   role="img"
                   viewBox="0 0 24 24"
@@ -311,12 +315,12 @@
                 </svg>
               </a>
               <a
-                href="https://wa.me/6289679063278"
+                href="https://wa.me/85839734150"
                 target="_blank"
                 class="media-icon"
               >
                 <svg
-                  class="fill-current"
+                  class="fill-black"
                   width="20"
                   role="img"
                   viewBox="0 0 24 24"
@@ -337,7 +341,7 @@
     <!-- Portfolio section -->
     <section
       id="portfolio"
-      class="bg-slate-300 py-4 pt-14 dark:bg-slate-700 md:pt-20"
+      class="bg-slate-300 py-4 pt-14 dark:bg-slate-800 md:pt-20"
     >
       <div class="container mx-auto">
         <div class="w-full md:px-4">
@@ -360,157 +364,108 @@
           >
             <div class="mb-12 p-4 md:w-[45%]">
               <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
-                <img src="img/new 1.png" alt="portfolio1" class="w-full" />
+                <img src="img/Fresh Avocado.jpg" alt="Fresh Avocado" class="w-full" loading="lazy" />
               </div>
-              <h4
-                class="mb-1 mt-3 flex justify-center text-center font-semibold items-center group "
-              >
-                <a
-                  href="https://taratect.vercel.app"
-                  target="_blank"
-                  class="hover:text-primary"
-                  >Wedding Invitation Website</a
-                >
+            </div>
 
-                <div class="ml-2 opacity-0 relative -left-10 group-hover:opacity-100 group-hover:left-0 transition-all">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-box-arrow-up-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                    />
-                  </svg>
-                </div>
-              </h4>
-              <p class="text-center">
-                An invitation of wedding website with an elegant design, fully
-                functional and responsive
-              </p>
-            </div>
             <div class="mb-12 p-4 md:w-[45%]">
               <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
-                <img src="img/new 2.png" alt="sign in page" class="w-full" />
+                <img src="img/Fresh Orange.jpg" alt="Fresh Orange" class="w-full" loading="lazy" />
               </div>
-              <h4
-                class="mb-1 mt-3 flex justify-center text-center font-semibold items-center group "
-              >
-                <a
-                  href="https://arayamusawwah.vercel.app"
-                  target="_blank"
-                  class="hover:text-primary"
-                  >Animated Portfolio</a
-                >
-                <div class="ml-2 opacity-0 relative -left-10 group-hover:opacity-100 group-hover:left-0 transition-all">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-box-arrow-up-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                    />
-                  </svg>
-                </div>
-              </h4>
-              <p class="text-center">
-                Website to your portfolio with eccentric animation
-              </p>
             </div>
-            <div class="mb-12 p-4 md:w-[45%]">
-              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
-                <img src="img/new 3.png" alt="Website" class="w-full" />
-              </div>
-              <h4
-                class="mb-1 mt-3 flex justify-center text-center font-semibold items-center group "
-              >
-                <a
-                  href="https://eventhesizer.vercel.app"
-                  target="_blank"
-                  class="hover:text-primary"
-                  >Interactive Modern Website</a
-                >
-                <div class="ml-2 opacity-0 relative -left-10 group-hover:opacity-100 group-hover:left-0 transition-all">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-box-arrow-up-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                    />
-                  </svg>
-                </div>
-              </h4>
-              <p class="text-center">
-                I can create a website with modern design, fully functional with
-                database integration and responsive to all devices
-              </p>
-            </div>
-            <div class="mb-12 p-4 md:w-[45%]">
-              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
-                <img src="img/new 4.png" alt="E-commerce" class="w-full" />
-              </div>
-              <h4
-                class="mb-1 mt-3 flex justify-center text-center font-semibold items-center group "
-              >
-                <a
-                  href="https://arayamusawwah.github.io/Jo-s-Dream-Coffee-/"
-                  target="_blank"
-                  class="hover:text-primary"
-                  >Landing Page</a
-                >
-              <div class="ml-2 opacity-0 relative -left-10 group-hover:opacity-100 group-hover:left-0 transition-all">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-box-arrow-up-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                  />
-                </svg>
-              </div>
-            </h4>
 
-              <p class="text-center">
-                Do you want to sell your product? and need to be online and
-                Web-based? Well, this is for you
-              </p>
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/Manipulasi bottle di dalam air .jpg" alt="Manipulasi bottle di dalam air" class="w-full" loading="lazy" />
+              </div>
             </div>
+
+            <!-- <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/Manipulasi Bottle Poster brata.jpg"  alt="Fresh Orange" class="w-full" loading="lazy" />
+              </div>
+            </div> -->
+
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/Manipulasi bottle poster bluberries .jpg"  alt="Manipulasi bottle poster bluberries" class="w-full" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/manipulasi gamabr nike.jpg"  alt="manipulasi gamabr nike" class="w-full" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/manipulasi gamabr nike2.jpg"  alt="manipulasi gamabr nike2" class="w-full" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/manipulasi gambar 2.jpg"  alt="manipulasi gambar 2" class="w-full" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/Manipulasi gambar 2.2.jpg"  alt="manipulasi gambar 2.2" class="w-full" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/manipulasi gambar neon3 copy.jpg"  alt="manipulasi gambar neon3" class="w-full" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/Manipulasi gambar 3.2.jpg"  alt="manipulasi gambar 3.2" class="w-full" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/Manipulasi gambar orang minum.jpg"  alt="manipulasi gambar orang minum" class="w-full" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/manipulasi gambar orang minum2.jpg"  alt="manipulasi gambar orang minum2" class="w-full" loading="lazy" />
+              </div>
+            </div>
+            
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/Brata Muhammad Project UI_UX.jpg"  alt="Brata Muhammad Project UI_UX" class="w-full" loading="lazy" />
+              </div>
+            </div>
+            
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/UiUX Login.jpg"  alt="UiUX Login" class="w-full" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="mb-12 p-4 md:w-[40%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <img src="img/iPhone 13 & 14 - 1 (1).jpg"  alt="iPhone 13 & 14" class="w-full" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="mb-12 p-4 md:w-[45%]">
+              <div class="overflow-hidden rounded-lg shadow-md shadow-black/40">
+                <video autoplay>
+                  <source src="img/Mr. Brats.mp4" type="video/mp4">
+                </video> 
+              </div>
+            </div>
+
             <div class="mb-12 p-4 md:w-[45%]">
               <div
                 class="aspect-[4/2] overflow-hidden rounded-lg bg-slate-100 shadow-md shadow-black/40"
@@ -754,17 +709,11 @@
         <div class="w-full px-4">
           <div class="mx-auto flex flex-wrap text-sm">
             <div class="mb-12 w-full px-4 text-secondary lg:w-1/3">
-              <a href="#home"
-                ><img
-                  src="img/Arμ's  Logo 0.png"
-                  alt="Arμ's"
-                  class="absolute top-3 mt-3 w-24"
-              /></a>
-              <h1 class="mb-5 text-3xl font-bold">Arμ's Group</h1>
+              <h1 class="mb-5 text-3xl font-bold">Brata Muhammad</h1>
               <h2 class="mb-2 text-2xl font-semibold">Contact Us</h2>
               <p>
                 <a href="mailto:miramadhan354@gmail.com" class="hover:text-primary"
-                  >miramadhan354@gmail.com</a
+                  >bratsmuhammad001@gmail.com</a
                 >
               </p>
               <p>Tangerang Selatan</p>
@@ -774,23 +723,23 @@
               <h3 class="mb-4 text-xl font-semibold">Projects</h3>
               <ul>
                 <li>
-                  <a href="https://taratect.vercel.app" target="_blank" class="mb-3 inline-block hover:text-primary"
-                    >Wedding Invitation Website</a
+                  <a href="#portfolio" class="mb-3 inline-block hover:text-primary"
+                    >Ui/UX Web & App Design</a
                   >
                 </li>
                 <li>
-                  <a href="https://arayamusawwah.vercel.app" target="_blank" class="mb-3 inline-block hover:text-primary"
-                    >Animated Portfolios</a
+                  <a href="#portfolio" class="mb-3 inline-block hover:text-primary"
+                    >Poster Pamflet Design</a
                   >
                 </li>
                 <li>
-                  <a href="https://eventhesizer.vercel.app" target="_blank" class="mb-3 inline-block hover:text-primary"
-                    >Interactive Modern Website</a
+                  <a href="#portfolio" class="mb-3 inline-block hover:text-primary"
+                    >Neon Manipulation Design</a
                   >
                 </li>
                 <li>
-                  <a href="https://arayamusawwah.github.io/Jo-s-Dream-Coffee-" target="_blank" class="mb-3 inline-block hover:text-primary"
-                    >Landing Page</a
+                  <a href="#portfolio" class="mb-3 inline-block hover:text-primary"
+                    >Promotional Video</a
                   >
                 </li>
               </ul>
@@ -833,7 +782,7 @@
                 class="media-icon bg-slate-900"
               >
                 <svg
-                  class="fill-current"
+                  class="fill-white"
                   width="20"
                   role="img"
                   viewBox="0 0 24 24"
@@ -851,7 +800,7 @@
                 class="media-icon bg-slate-900"
               >
                 <svg
-                  class="fill-current"
+                  class="fill-white"
                   width="20"
                   role="img"
                   viewBox="0 0 24 24"
@@ -869,7 +818,7 @@
                 class="media-icon bg-slate-900"
               >
                 <svg
-                  class="fill-current"
+                  class="fill-white"
                   width="20"
                   role="img"
                   viewBox="0 0 24 24"
@@ -895,7 +844,7 @@
                 class="media-icon bg-slate-900"
               >
                 <svg
-                  class="fill-current"
+                  class="fill-white"
                   width="20"
                   role="img"
                   viewBox="0 0 24 24"
@@ -911,7 +860,7 @@
             <p class="pt-4 text-sm text-slate-700">
               Created By
               <a
-                href="https://instagram.com/elite.iqbal"
+                href="https://github.com/ArayaMusawwah"
                 class="font-semibold text-primary"
                 target="_blank"
                 >Arμ's Group</a
@@ -923,7 +872,7 @@
               >.
             </p>
             <p class="text-sm text-slate-700">
-              &copy; 2023 All Rights Reserved
+              &copy; 2024 All Rights Reserved
             </p>
           </div>
         </div>
@@ -933,7 +882,7 @@
     <!-- back to top -->
     <div>
       <a
-        href="#home"
+        href="#"
         class="to-top fixed bottom-6 right-4 hidden h-12 w-12 items-center justify-center rounded-full bg-primary hover:animate-pulse"
         ><i class="fa-solid fa-arrow-up fa-lg" style="color: #b2b8c2"></i
       ></a>
