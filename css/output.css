@@ -777,6 +777,16 @@ body{
   margin-bottom: 2rem;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-96 {
+  margin-top: 24rem;
+  margin-bottom: 24rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1150,6 +1160,11 @@ body{
   padding-bottom: 2rem;
 }
 
+.py-96 {
+  padding-top: 24rem;
+  padding-bottom: 24rem;
+}
+
 .pb-14 {
   padding-bottom: 3.5rem;
 }
@@ -1204,6 +1219,10 @@ body{
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
